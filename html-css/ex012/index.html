@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas / Audios / Videos</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas / audio / video </h1>
+    <p>Tente abri esse site em varios Dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <!--Utilizada para reajustar as images pelo tamanho do site-->
+    <picture>
+        <!--Source media para fala em qual tamamho muda a imagem caso diminua a tela-->
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture> 
+    <h1>Reproduzindo audio</h1> 
+    <p>Vamos aprender a reproduzir audio em HTML 5</p>
+    <!--<audio src="midia/guanacast-33.mp3" controls autoplay></audio>-->
+    <audio preload="none" controls loop>
+        <source src="midia/guanacast-33.mp3" type="">
+    </audio>
+    <h1>Insesinos videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu propio servidor</p>
+    <!--<video src="midia/meuvideo.mp4" width="500px" autoplay controls></video>-->
+    <!--Poster e para coloca capa no video / controls para coloca o play / autoplay para iniciar automatico -->
+    <video width="500px" poster="" controls loop>
+        <source src="midia/Meuvideo1.mp4" type="video/mp4">
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade</p>
+    </video>
+    <h1>Inserino Videos do YouTube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/SWVO95XzxKg?si=sfzGbiNKcRvWvDci" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
