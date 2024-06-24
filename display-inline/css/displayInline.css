@@ -1,0 +1,20 @@
+.example{
+    color: #fff;
+    text-align: center; /*O elemento pai alinha todos os filhos ao centro do monitor*/
+}
+
+.example-item{
+    width: 33.333%;
+    height: 150px;
+    display: inline; /*Coloca um do lado do outro porem perde largura e altura e tem um espacamento entre eles, porque ele ganha um comportamento de palavra, um espaço entre eles e para retira esse espaçamento e so colocar um comentario como ganbiarra.*/
+}
+
+.example-item_first{
+    background-color: #FAA116;
+}
+.example-item_second{
+    background-color: #57C7C3;
+}
+.example-item_third{
+    background-color: #3B97D3;
+}

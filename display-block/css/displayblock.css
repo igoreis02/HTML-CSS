@@ -1,0 +1,25 @@
+.example{
+    color: #fff;
+}
+
+.example-item{
+    display: block; /*Algumas tags ja é de padrao block ele ocupa a linha todo nao sendo possivel coloca outro elemento do lado*/
+    width: 33.333%; /*Preocupa de sempre seta a largura de um elemento display block se nao seta aqui ele vai ocupa a tela toda*/
+    height: 150px;
+    text-align: center; 
+}
+
+.example-item_first{
+    background-color: #FAA116;
+    
+}
+.example-item_second{
+    background-color: #57C7C3;
+    margin-left: auto; /*Disloca para o lado direiro, podendo trabalhar com a porcentagem conforme o tamanho(Mas caso alterarmos a largura do elemento pode ter problema), mas com AUTO ela preenche toda a margem do lado esquedo levando para a direira  */
+}
+.example-item_third{
+    background-color: #3B97D3;
+    margin-left: auto; /*Preeche o lado esquedo ate chegar no lado direiro */
+    margin-right: auto; /*preenche o lado direiro ate chegar no direito*/ 
+    /*Com isso ele centraliza*/
+}

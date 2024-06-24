@@ -1,0 +1,48 @@
+.container{
+    display: flex; /*ele usa o eixo principal que e a linha(horizontal)*/
+    text-align: center;
+    
+    flex-direction: row;    /*define qual a direção do eixo principal dos elementos(horizontal ou vertical , por padrao é row) */ 
+    /*row-reverse - muda o sentido da linha comecando pelo lado direiro
+    column -  fica como coluna 
+    column-reverse - muda a direção comencando de baixo para cima */
+    justify-content: center; /* alinha os item no eixo principal horizontal*/
+     /*Alinha os elementos no eixo secundario (vertical)*/
+     align-items: center; /*Posiciona os item na posicao secundaria (vertical) eixo perpendicular  */
+     flex-wrap: wrap; /*(padrao no-wrap - faz encaica tudo na mesma linha) com o wrap - caso esteja muito grande ele desce um elemento para proxima linha */
+
+     /*consegue declarar a propiedade flex-direction e flax-wrap  com a FLEX-FLOW: ROW WRAP; */
+
+     align-content: center; /*Alinha elementos em mais de uma linha quando esta utilizando o wrap */
+     gap: 50px;  /*espacamento entre os elementos */
+}
+
+.item{
+    width: 15%;
+    border-radius: 30px;
+    padding: 3%;
+}
+
+.bloco-1{
+    background-color: rgb(122, 122, 255);
+    order: 0; /*comeca sempre com 0 e pode ser negativo */
+    /*Se tiver mais de um elemento ele ordena conforme a quantidade que tiver segue a ordem -1 0 1 2 */
+    flex-grow: 0; /*Define se pode crescer ou nao caso seja nescessario */
+    flex-shrink: 1 ; /*define se vai encolher  (nao pode ter o wrap ) */
+    flex-basis: auto; /*Define a o tamanho do itens , tanto em largura quanto em altura vem com Auto de padrao (auto vai pelo valor de largura e altura definido*/
+
+    align-self: flex-start; /*muda a posiçao de cada elemento se necessario para os filhos */
+}
+.bloco-2{
+    background-color: rgb(182, 110, 249);
+    order: 0;
+    align-self: flex-end;
+}
+.bloco-3{
+    background-color: rgb(255, 255, 145);
+    order: 0;
+}
+.bloco-4{
+    background-color: gray;
+    order: 0;
+}
